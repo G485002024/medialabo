@@ -16,3 +16,14 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 
+console.log("八王子市館町");
+
+let ms=["D101","D102","D103","D201","D202","D203","D204","D205"];
+for (let m of ms) {
+    console.log(m);
+}
+
+let ns=["機械システム工学科","電子システム工学科","情報工学科","デザイン学科"];
+for (let n of ns) {
+	console.log(n);
+}
