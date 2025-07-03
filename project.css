@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     color: black;
-    background-color: #a38c72;
+    background-color: #9cd2dc;
     line-height: 1.6;
     padding: 20px;
 }
@@ -16,7 +16,7 @@ a {
     color: inherit;
 }
 h1 {
-    color: rgb(231, 36, 43);
+    color: rgb(79, 130, 224);
 }
 h2 {
     color: rgb(43, 11, 3);
