@@ -1,8 +1,50 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
+let data = {
+  kekka: "1件目の検索結果",
+  name: "バグダッドカフェ Bagdadcafe/モータウン MOTOWN",
+  genre: { name: "居酒屋" },
+  address: "東京都八王子市明神町４-6-12 ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F",
+  open: "月～日、祝日、祝前日: 17:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:00）",
+  access: "京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。",
+  station_name: "京王八王子",
+  budget: { name: "3001～4000円" },
+  catch: "【サプライズ演出有】 結婚パーティー受付中",
+  kekka2: "2件目の検索結果",
+  name2: "隠れ家バル Funny&Bouquet",
+  genre2: { name: "居酒屋" },
+  address2: "東京都八王子市東町12-14",
+  open2: "月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）",
+  access2: "JR八王子駅北口徒歩1分/京王八王子駅徒歩3分",
+  station_name2: "八王子",
+  budget2: { name: "2001～3000円" },
+  catch2: "2.5時間飲み放題付2000円~ 【★少人数様ソファー★】"
+};
 function print(data) {
+  console.log(data.kekka);
+  console.log("名前:"+ data.name);
+  console.log("ジャンル:"+ data.genre.name);
+  console.log("住所:"+ data.address);
+  console.log("営業時間:"+ data.open);
+  console.log("アクセス:"+ data.access);
+  console.log("最寄駅:"+ data.station_name);
+  console.log("予算:"+ data.budget.name);
+  console.log("キャッチコピー:"+ data.catch);
 
+  console.log(data.kekka2);
+  console.log("名前:"+ data.name2);
+  console.log("ジャンル:"+ data.genre.name2);
+  console.log("住所:"+ data.address2);
+  console.log("営業時間:"+ data.open2);
+  console.log("アクセス:"+ data.access2);
+  console.log("最寄駅:"+ data.station_name2);
+  console.log("予算:"+ data.budget.name2);
+  console.log("キャッチコピー:"+ data.catch2);
 }
+
+document.getElementById("print").addEventListener("click", function() {
+  print(data);
+});
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
@@ -38,7 +80,7 @@ function finish() {
 // 以下はグルメのデータサンプル
 // 注意: 第5回までは以下を変更しないこと！
 // 注意2: 課題6-1 で以下をすべて削除すること
-let data = {
+let dat = {
   "results": {
     "api_version": "1.26",
     "results_available": 52,
