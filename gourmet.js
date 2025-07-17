@@ -12,12 +12,12 @@ let data = {
   catch: "【サプライズ演出有】 結婚パーティー受付中",
   kekka2: "2件目の検索結果",
   name2: "隠れ家バル Funny&Bouquet",
-  genre2: { name: "居酒屋" },
+  genre2: { name2: "居酒屋" },
   address2: "東京都八王子市東町12-14",
   open2: "月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）",
   access2: "JR八王子駅北口徒歩1分/京王八王子駅徒歩3分",
   station_name2: "八王子",
-  budget2: { name: "2001～3000円" },
+  budget2: { name2: "2001～3000円" },
   catch2: "2.5時間飲み放題付2000円~ 【★少人数様ソファー★】"
 };
 function print(data) {
@@ -33,23 +33,56 @@ function print(data) {
 
   console.log(data.kekka2);
   console.log("名前:"+ data.name2);
-  console.log("ジャンル:"+ data.genre.name2);
+  console.log("ジャンル:"+ data.genre2.name2);
   console.log("住所:"+ data.address2);
   console.log("営業時間:"+ data.open2);
   console.log("アクセス:"+ data.access2);
   console.log("最寄駅:"+ data.station_name2);
-  console.log("予算:"+ data.budget.name2);
+  console.log("予算:"+ data.budget2.name2);
   console.log("キャッチコピー:"+ data.catch2);
 }
-
 document.getElementById("print").addEventListener("click", function() {
   print(data);
 });
 
+function greeting() {
+  let keyword = document.querySelector('#search');
+  console.log("検索キー:", keyword);
+}
+b = document.querySelector('button#print');
+b.addEventListener('click', greeting);
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+d = document.createElement("div");
+d.id = "result";
+let p = document.createElement("p");
+p.textContent = "";
+  p.textContent += "1件目の検索結果" + data.kekka;
+  p.textContent += "名前: " + data.name;
+  p.textContent += "ジャンル: " + data.genre.name;
+  p.textContent += "住所: " + data.address;
+  p.textContent += "営業時間: " + data.open;
+  p.textContent += "アクセス: " + data.access;
+  p.textContent += "最寄駅: " + data.station_name;
+  p.textContent += "予算: " + data.budget.name;
+  p.textContent += "キャッチコピー: " + data.catch;
 
+  p.textContent += "2件目の検索結果" + data.kekka2;
+  p.textContent += "名前: " + data.name2;
+  p.textContent += "ジャンル: " + data.genre2.name2;
+  p.textContent += "住所: " + data.address2;
+  p.textContent += "営業時間: " + data.open2;
+  p.textContent += "アクセス: " + data.access2;
+  p.textContent += "最寄駅: " + data.station_name2;
+  p.textContent += "予算: " + data.budget2.name2;
+  p.textContent += "キャッチコピー: " + data.catch2;
+    d.appendChild(p);
+  document.getElementById("result").appendChild(d);
 }
+  document.querySelector('#print').addEventListener('click', function() {
+  printDom(data);
+});
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
