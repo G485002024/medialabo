@@ -118,32 +118,55 @@ function showResult(resp) {
 
   for(let n of data.results.shop){
     e=e+1;
-    u = document.createElement('ul');      // ul 要素を作成
+    u = document.createElement('ul');//ul要素作成
 
-l = document.createElement('li');      // 赤のli要素を作成して，
-l.textContent = '名前'+n.name;                  // ul要素の中に追加
+l = document.createElement('li');
+let st = document.createElement('strong');
+st.textContent = e+'件目の検索結果';
+l.appendChild(st);
+u.appendChild(l);
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = '名前: '+n.name;
 u.insertAdjacentElement('beforeend', l);     
 
-l = document.createElement('li');      // 緑のli要素を作成して，
-l.textContent = '緑';                  // ul要素の中に追加
+l = document.createElement('li');
+l.textContent = 'ジャンル: '+n.genre.name;
 u.insertAdjacentElement('beforeend', l);     
 
-l = document.createElement('li');      // 青のli要素を作成して，
-l.textContent = '青';                  // ul要素の中に追加
+l = document.createElement('li');
+l.textContent = '住所: '+n.address;
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = '営業時間: '+n.open;
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = 'アクセス: '+n.access;
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = '最寄り駅: '+n.station_name;
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = '予算: '+n.budget.name;
+u.insertAdjacentElement('beforeend', l);
+
+l = document.createElement('li');
+l.textContent = 'キャッチコピー: '+n.catch;
 u.insertAdjacentElement('beforeend', l);
 
 p = document.querySelector('div#result');     // p#primary 要素の
 p.insertAdjacentElement('beforeend', u);      // 直後に ul要素を追加
 
 if(n.sub_genre){
-  l = document.createElement('li');      // 青のli要素を作成して，
-l.textContent = 'サブジャンル'+n.sub_genre.name;                  // ul要素の中に追加
+  l = document.createElement('li');
+l.textContent = 'サブジャンル'+n.sub_genre.name;
 u.insertAdjacentElement('beforeend', l);
 }
-
-p = document.querySelector('div#result');     // p#primary 要素の
-p.insertAdjacentElement('beforeend', u);      // 直後に ul要素を追加
-
 
   }
   p = document.createElement('h2');

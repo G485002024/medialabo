@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     color: black;
-    background-color: #9cd2dc;
+    background-color: #cbdf17;
     line-height: 1.6;
     padding: 20px;
 }
@@ -16,7 +16,10 @@ a {
     color: inherit;
 }
 h1 {
-    color: rgb(79, 130, 224);
+    background-color: #7f7fcf;
+	color: white;
+    width: 170px;
+	text-shadow: 3px 3px 3px rgb(207, 186, 25);
 }
 h2 {
     color: rgb(43, 11, 3);
@@ -24,23 +27,14 @@ h2 {
 h3 {
     color: rgb(177, 125, 88);
 }
-a:link {
-  color: rgb(230, 9, 46);
+
+ul {
+  border: 3px solid #1922a1;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #df9f9f;
 }
 
-a:visited {
-  color: rgb(161, 105, 171);
-}
-
-a:hover {
-  text-decoration: black;
-}
-
-p.target{
-    border: 3px solid black;
-    padding: 20px;
-    margin: 30px;
-    width: 600px;
-    height: 120px;
-    background: rgb(203, 154, 133);
+strong {
+  font-size: 1.2em;
 }

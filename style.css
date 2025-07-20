@@ -16,31 +16,58 @@ a {
     color: inherit;
 }
 h1 {
-    color: rgb(253, 0, 0);
+    color: red;
+    background-color: rgb(229, 133, 44);
+    width: 470px;
+	text-shadow: 3px 3px 3px rgb(230, 241, 31);
 }
 h2 {
-    color: rgb(184, 50, 17);
+    color: rgb(224, 20, 20);
 }
 h3 {
-    color: rgb(177, 125, 88);
+    color: rgb(220, 25, 162);
 }
 a:link {
-  color: rgb(230, 9, 46);
+  color: blue
 }
 
 a:visited {
-  color: rgb(161, 105, 171);
+  color: rgb(61, 203, 219);
 }
 
 a:hover {
-  text-decoration: black;
+  text-decoration: rgb(97, 202, 95);
 }
 
 p.target{
     border: 3px solid black;
     padding: 20px;
     margin: 30px;
-    width: 600px;
+    width: 1200px;
+    height: 100px;
+    background: rgb(203, 154, 133);
+}
+p.pro{
+    border: 3px solid black;
+    padding: 20px;
+    margin: 30px;
+    width: 1200px;
     height: 150px;
+    background: rgb(203, 154, 133);
+}
+p.kazu{
+    border: 3px solid black;
+    padding: 20px;
+    margin: 30px;
+    width: 1200px;
+    height: 160px;
+    background: rgb(203, 154, 133);
+}
+p.matome{
+    border: 3px solid black;
+    padding: 20px;
+    margin: 30px;
+    width: 1200px;
+    height: 390px;
     background: rgb(203, 154, 133);
 }
