@@ -8,9 +8,8 @@ p.info {
 }
 
 h1 {
-	background-color: #7f7fcf;
 	color: white;
-	text-shadow: 1px 1px 2px navy;
+	text-shadow: 1px 1px 10px navy;
 }
 
 h2 {
@@ -18,7 +17,7 @@ h2 {
 	margin: 5px;
 	font-family:cursive;
 	color: #3f3faf;
-	background:linear-gradient(white,#ffefaf);
+	background:linear-gradient(to right,white,#ffefaf);
 
 }
 
